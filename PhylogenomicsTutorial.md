@@ -79,7 +79,11 @@ conda install -c bioconda iqtree
 
 ## Interpret the results
 
+On your personal/course computers you can download FigTree. This will help you visualize the phylogeny you have obtained from IQ-TREE in the previous step. 
+
+*FigTree*: http://tree.bio.ed.ac.uk/software/figtree/
+
 Check the bootstrap values that support each of your clades. Is this expected? 
-Compare your phylogeny to literature, do you have a similar placement of clades?
+Compare your phylogeny to literature, do you have a similar placement of the different species?
 
 

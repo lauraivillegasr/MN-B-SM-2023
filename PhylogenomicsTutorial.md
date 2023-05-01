@@ -101,4 +101,5 @@ On your personal/course computers you can download FigTree. This will help you v
 Check the bootstrap values that support each of your clades. Is this expected? 
 Compare your phylogeny to literature, do you have a similar placement of the different species?
 
+*A novel nematode species from the Siberian permafrost shares adaptive mechanisms for cryptobiotic survival with C. elegans dauer larva*: https://www.biorxiv.org/content/10.1101/2022.01.28.478251v6.full
 

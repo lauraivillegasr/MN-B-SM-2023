@@ -7,26 +7,23 @@ We will select subsets of them and obtain phylogenies for each of the sets to co
 
 ## Data set selection and extraction of specific orthogroups
 
-jeje
+Here are some orhtologues that you could use (Single-Copy found in all datasets): 
+
+- 7050at6231.faa
+- 8055at6231.faa
+- 9097at6231.faa
+- 3553at6231.faa
+- 4183at6231.faa
+- 5142at6231.faa
+- 6503at6231.faa
+- 6753at6231.faa
+- 7230at6231.faa
+- 7546at6231.faa
 
 
 ## Prepare alignments for the different sets
 
 ### A. Installing the required software
-
-
-Here are some orhtologues that you could use (Single-Copy found in all datasets): 
-
-*7050at6231.faa
-*8055at6231.faa
-*9097at6231.faa
-*3553at6231.faa
-*4183at6231.faa
-*5142at6231.faa
-*6503at6231.faa
-*6753at6231.faa
-*7230at6231.faa
-*7546at6231.faa
 
 
 Since you are working on CHEOPS1, you can use packages that are available there. 

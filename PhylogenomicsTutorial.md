@@ -75,6 +75,8 @@ C. Concatenate the gene alignments
 
 `ruby concatenate.rb -i 09/*.nex -o concatenated.nex -f nexus`
 
+(alternatively check https://github.com/nylander/catfasta2phyml)
+
 ## Obtain a phylogeny using IQ-TREE
 
 ### A. Installing the required software

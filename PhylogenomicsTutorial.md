@@ -7,7 +7,7 @@ We will select subsets of them and obtain phylogenies for each of the sets to co
 
 ## Data set selection and extraction of specific orthogroups
 
-Here are some orhtologues that you could use (Single-Copy found in all datasets): 
+Here are some orhtologues that you could use (Single-Copy): 
 
 - 7050at6231.faa
 - 8055at6231.faa
@@ -21,6 +21,8 @@ Here are some orhtologues that you could use (Single-Copy found in all datasets)
 - 7546at6231.faa
 
 (check if they are available for all the datasets  `find . -name 7050at6231.faa`)
+
+- Before we start: we need to prepare/order the data in a logical way for our analysis. Do you have an idea how? Take a look at the current folder structure and names of the files.
 
 ### Information about the orhtologue
 

@@ -20,6 +20,8 @@ Here are some orhtologues that you could use (Single-Copy found in all datasets)
 - 7230at6231.faa
 - 7546at6231.faa
 
+(check if they are available for all the datasets  `find . -name 7050at6231.faa`)
+
 ### Information about the orhtologue
 
 *OrthoDB*: https://www.orthodb.org

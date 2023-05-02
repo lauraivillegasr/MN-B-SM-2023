@@ -46,6 +46,8 @@ conda install -c bioconda mafft
 
 ### B. Implementing the commands
 
+A. Alignement of genes from different species
+
 *MAFFT*: https://mafft.cbrc.jp/alignment/software/
 
 `mafft -h`
@@ -54,6 +56,7 @@ conda install -c bioconda mafft
 
 Note: alignments need to be trimmed to remove poorly aligned regions that could yield inproper results.
 
+B. Trimming the alignment
 ```
 conda create -n trimal
 conda activate trimal
@@ -65,6 +68,12 @@ conda install -c bioconda trimal
 *TRIMAL*: http://trimal.cgenomics.org/getting_started_with_trimal_v1.2
 
 `trimal -in example1 -out output1 -htmlout output1.html -gt 1`
+
+C. Concatenate the gene alignments
+
+*Concatenate.rb*: https://github.com/mmatschiner/tutorials
+
+`ruby concatenate.rb -i 09/*.nex -o concatenated.nex -f nexus`
 
 ## Obtain a phylogeny using IQ-TREE
 
@@ -98,8 +107,9 @@ On your personal/course computers you can download FigTree. This will help you v
 
 *FigTree*: http://tree.bio.ed.ac.uk/software/figtree/
 
-Check the bootstrap values that support each of your clades. Is this expected? 
-Compare your phylogeny to literature, do you have a similar placement of the different species?
+- Check the bootstrap values that support each of your clades. Is this expected? 
+- Compare your phylogeny to literature, do you have a similar placement of the different species?
+- When comparing phylogenies with different subsets of genes, what do you notice? How does support change?
 
 *A novel nematode species from the Siberian permafrost shares adaptive mechanisms for cryptobiotic survival with C. elegans dauer larva*: https://www.biorxiv.org/content/10.1101/2022.01.28.478251v6.full
 

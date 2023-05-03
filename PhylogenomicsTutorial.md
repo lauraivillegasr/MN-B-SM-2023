@@ -27,15 +27,17 @@ Here are some orhtologues that you could use (Single-Copy):
 *OrthoDB*: https://www.orthodb.org
 *BUSCO*: https://academic.oup.com/bioinformatics/article/31/19/3210/211866
 
-A. Before we start: we need to prepare/order the data in a logical way for our analysis. Do you have an idea how? Take a look at the current folder structure and names of the files.
+**A.** Before we start: we need to prepare/order the data in a logical way for our analysis. Do you have an idea how? Take a look at the current folder structure and names of the files.
 
-B. Choose a strategy for sorting them (e.g. create new folders for each taxa where we place only the orthologues of interest we will work with, rename files in the individual folders per taxa, once each file can be traced back to their taxa of origin, re group the orhtologues in folder according to the genes and not the taxa).  
+**B.** Choose a strategy for sorting them (e.g. create new folders for each taxa where we place only the orthologues of interest we will work with, rename files in the individual folders per taxa, once each file can be traced back to their taxa of origin, re group the orhtologues in folder according to the genes and not the taxa).  
 
-C. Renaming files to match their taxa:
+ - Copy the files needed to the new folders `for file in $(cat ~/Desktop/files.txt); do cp "$file" ~/newfolder; done`
+ 
+**C.** Renaming files to match their taxa:
 
 `for f in *.faa*; do mv -i -- "$f" "${f//.faa/celegans.faa}"; done`
 
-D. Check the header of the file. Rename the header of the contig/gene so it matches the taxa and orthoglogue (think first about how you would do this on your own!):
+**D.** Check the header of the file. Rename the header of the contig/gene so it matches the taxa and orthoglogue (think first about how you would do this on your own!):
 
 `for FILE in *.faa;do awk '/^>/ {gsub(/.faa?$/,"",FILENAME);printf(">%s\n",FILENAME);next;} {print}' $FILE >>changed_${FILE}; done`
 
@@ -62,7 +64,7 @@ conda install -c bioconda mafft
 
 ### B. Implementing the commands
 
-A. Alignement of genes from different species
+**A.** Alignement of genes from different species
 
 *MAFFT*: https://mafft.cbrc.jp/alignment/software/
 
@@ -72,7 +74,7 @@ A. Alignement of genes from different species
 
 Note: alignments need to be trimmed to remove poorly aligned regions that could yield inproper results.
 
-B. Trimming the alignment
+**B.** Trimming the alignment
 ```
 conda create -n trimal
 conda activate trimal
@@ -85,7 +87,7 @@ conda install -c bioconda trimal
 
 `trimal -in example1 -out output1 -htmlout output1.html -gt 1`
 
-C. Concatenate the gene alignments
+**C.** Concatenate the gene alignments
 
 *Concatenate.rb*: https://github.com/mmatschiner/tutorials
 

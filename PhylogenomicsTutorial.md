@@ -31,7 +31,7 @@ Here are some orhtologues that you could use (Single-Copy):
 
 **B.** Choose a strategy for sorting them (e.g. create new folders for each taxa where we place only the orthologues of interest we will work with, rename files in the individual folders per taxa, once each file can be traced back to their taxa of origin, re group the orhtologues in folder according to the genes and not the taxa).  
 
- - Copy the files needed to the new folders `for file in $(cat ~/Desktop/files.txt); do cp "$file" ~/newfolder; done`
+ - Copy the files needed to the new folders `for file in $(cat list); do cp "$file" new_folder; done`
  
 **C.** Renaming files to match their taxa:
 

@@ -27,6 +27,7 @@ Here are some orhtologues that you could use (Single-Copy):
 ### Information about the orhtologue
 
 *OrthoDB*: https://www.orthodb.org
+*BUSCO*: https://academic.oup.com/bioinformatics/article/31/19/3210/211866
 
 ## Prepare alignments for the different sets
 

@@ -1,8 +1,7 @@
 # **Phylogenomics**
 
 
-We will work with the orthogroups you have identified last week.
-We will select subsets of them and obtain phylogenies for each of the sets to compare how the results and resolution of the analysis changes with the data that is used. 
+We will work with the orthogroups as you already have learned how to identify last week. We will be working in the `/scratch/phylog-course/` folder in CHEOPS. Create a folder of your own (if you don't already have one) so we don't interfere with each others work. We will select subsets of orthologues for each to work on, we will obtain phylogenies for each of the sets to compare how the results and resolution of the analysis changes with the data that is used. 
 
 
 ## Data set selection and extraction of specific orthogroups

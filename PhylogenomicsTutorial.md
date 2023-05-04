@@ -68,13 +68,14 @@ conda install -c bioconda mafft
 
 *MAFFT*: https://mafft.cbrc.jp/alignment/software/
 
+you should create a list with your file names and then put all the sequences together into a file
+
+`while read f; do cat $f* >> $f"_for_mafft" ; done < genelist`
+
 `mafft -h`
 
 `mafft --auto in > out`
 
-you should create a list with your file names and then put all the sequences together into a file
-
-`while read f; do cat $f* >> $f"_for_mafft" ; done < genelist`
 
 Note: alignments need to be trimmed to remove poorly aligned regions that could yield inproper results.
 
